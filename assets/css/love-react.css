@@ -1,0 +1,52 @@
+/* Circle button = white background, shadow, heart icon, count */
+.love-react-btn{
+  width:64px;
+  height:64px;
+  border:none;
+  border-radius:50% !important;
+  background:#ffffff !important;
+  box-shadow:0 4px 12px rgba(0,0,0,.08) !important;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  cursor:pointer;
+  transition:transform .2s ease-in-out, background .2s;
+  -webkit-border-radius:50% !important;
+  -moz-border-radius:50% !important;
+  -ms-border-radius:50% !important;
+  -o-border-radius:50% !important;
+  z-index: 1111 !important;
+}
+
+/* subtle zoom on hover */
+.love-react-btn:hover{
+  transform:scale(1.07);
+}
+
+/* heart outline colour */
+.love-react-btn .heart{
+  color:#fd3e45;  /* love pink/red */
+  line-height:1;
+}
+
+/* number style */
+.love-react-btn .count{
+  font-size:15px;
+  font-weight:600;
+  color:#333333;
+}
+
+/* after clicked (loved) – invert colours */
+.love-react-btn.loved{
+  background:#fd3e45;
+  box-shadow:0 4px 12px #fd3e446c;
+}
+.love-react-btn.loved .heart{
+  color:#fd3e45;
+}
+
+.love-react-btn.loved .count{
+  color:#333333;
+}
